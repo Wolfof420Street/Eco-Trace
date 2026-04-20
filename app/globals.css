@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #f5f0e8;
+  --bg-surface: #ede8dc;
+  --bg-elevated: #ffffff;
+  --bg-overlay: rgba(245, 240, 232, 0.85);
+  --accent-primary: #1a6b3c;
+  --accent-secondary: #2d9a5f;
+  --accent-glow: #4cc97a;
+  --accent-amber: #c47c2b;
+  --accent-red: #c0392b;
+  --text-primary: #0d1f0f;
+  --text-secondary: #3d5c42;
+  --text-muted: #7a9b7f;
+  --text-inverse: #f5f0e8;
+  --border: rgba(26, 107, 60, 0.15);
+  --border-strong: rgba(26, 107, 60, 0.35);
+  --shadow-sm: 0 1px 3px rgba(13, 31, 15, 0.08);
+  --shadow-md: 0 4px 16px rgba(13, 31, 15, 0.12);
+  --shadow-lg: 0 16px 48px rgba(13, 31, 15, 0.18);
+  --glow-green: 0 0 24px rgba(76, 201, 122, 0.35);
+  --glow-amber: 0 0 24px rgba(196, 124, 43, 0.35);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --font-display: Fraunces, Georgia, serif;
+  --font-body: Geist, system-ui, sans-serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --bg-base: #050e07;
+  --bg-surface: #0a1a0c;
+  --bg-elevated: #0f2414;
+  --bg-overlay: rgba(5, 14, 7, 0.9);
+  --accent-primary: #4cc97a;
+  --accent-secondary: #2d9a5f;
+  --accent-glow: #7fffab;
+  --accent-amber: #f0a855;
+  --accent-red: #ff6b6b;
+  --text-primary: #e8f5eb;
+  --text-secondary: #86c99a;
+  --text-muted: #4a7a58;
+  --text-inverse: #050e07;
+  --border: rgba(76, 201, 122, 0.12);
+  --border-strong: rgba(76, 201, 122, 0.28);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --glow-green: 0 0 32px rgba(76, 201, 122, 0.4);
+  --glow-amber: 0 0 32px rgba(240, 168, 85, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(76, 201, 122, 0.12), transparent 30%),
+    linear-gradient(180deg, var(--bg-base), color-mix(in srgb, var(--bg-base) 82%, black));
+  color: var(--text-primary);
+  font-family: var(--font-body);
+}
+
+* {
+  border-color: var(--border);
+}
+
+.hero-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(127, 255, 171, 0.12) 0, transparent 24%),
+    radial-gradient(circle at 70% 30%, rgba(240, 168, 85, 0.12) 0, transparent 22%),
+    radial-gradient(circle at 30% 80%, rgba(76, 201, 122, 0.08) 0, transparent 18%);
+  pointer-events: none;
+}
