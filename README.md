@@ -4,7 +4,7 @@
 
 EcoTrace is a full-stack web application that empowers users to track their personal carbon footprint, visualize their environmental impact, chat with an AI coach that remembers their eco-journey, and earn blockchain-verified eco-badges for hitting sustainability milestones.
 
-**Live:** https://ecotrace.vercel.app  
+**Live:** [eco-trace-two.vercel.app](https://eco-trace-two.vercel.app/)
 **Repository:** https://github.com/Wolfof420Street/Eco-Trace
 
 ---
